@@ -1,0 +1,79 @@
+
+h1{
+    color:orange;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+#ListType{
+    list-style-type:none;
+}
+
+.par{
+    background-color: rgb(188, 188, 96);
+    color:aqua
+}
+
+.centrado{
+    text-align: center;
+}
+
+#Spacing{
+    letter-spacing: 20px;
+}
+
+.mediano{
+    font-size: medium;
+}
+
+.grande{
+    font-size: 30px;
+}
+
+.italica{
+    font-style: italic;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.shadow{
+    text-shadow: 2px 2px gray;
+}
+
+.Campo{
+    border-radius: 12px;
+
+}
+
+.Azul{
+    border-color: blue;
+}
+
+.rojo{
+    border-color: red;
+}
+
+
+#fomulario{
+    color:blue;
+}
+
+.padding{
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+    border-radius: 12px;
+}
+
+
+
+.Grande{
+    padding: 30px;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px orange;
+}

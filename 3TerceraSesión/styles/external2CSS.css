@@ -1,0 +1,11 @@
+input[checked]{
+    height: 25px;
+    width: 25px;
+}
+input[name="text1"]{
+    color:blue;
+}
+input[random^="hola"]{
+    border-color: red;
+    border-radius: 20px;
+}

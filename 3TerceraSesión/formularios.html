@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/external2CSS.css">
+    <meta charset="UTF-8">
+    <title>TERCERA SESIÓN</title>
+</head>
+<body>
+    <h1>FORMULARIO SIMPLE NO. 1</h1>
+    <form action="">
+        <label for="nombre">Nombre: </label>
+        <input id= "nombre" type="text" name="text1" random="hola 1"><br>
+
+        <label for="apellido">Apellido: </label>
+        <input id = "apellido" type="text" name="apellido" random="hola 2"><br>
+
+        <label for="comentarios">Comentarios: </label><br>
+        <textarea name="comentarios" cols="40" rows="5">Valor por defecto de texto grande 
+        </textarea><br>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" name = "usuario" id="usuario"> <br>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name = "password" id="contraseña"> <br>
+
+        <label for="numero">Número:</label>
+        <input type="number" name = "cantidad" id="numero" min="1" max="13"> <br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" name = "email" id="correo"> <br>
+
+        <label for="archivo">Archivo:</label>
+        <input type="file" name = "myFile" id="archivo"> <br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" name = "miColor" id="color" value="#0000ff"> <br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name = "fecha" id="fecha" value="2019-01-21"> <br>
+
+        <label for="mes">Mes:</label>
+        <input type="month" name = "mes" id="mes"> <br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" name = "hora" id="hora"> <br><br>
+
+        Checkboxes: <br>
+       <input type="checkbox" name="chbx1" id="chbx1" checked>
+       Checkbox 1
+       <input type="checkbox" name="chbx2" id="chbx2">
+       Checkbox 2
+       <input type="checkbox" name="chbx3" id="chbx3" checked>
+       Checkbox3 <br> <br>
+       
+       Radios: <br><!--En radios, si tiene el msimo name, pertenecen al mismo conjunto de radios-->
+       <input type="radio" name="test" value="t1">
+       Radio1 <br>
+       <input type="radio" name="test" value="t2">
+       Radio2 <br>
+
+       Rango:
+       <input type="range" name="points" min="0" max="10"><br>
+       Botón: 
+       <input type="button" value="pícale" onclick="alert('Hola mundo!');"><br><br>
+       Selector: <br>
+       <select name="select" id="select">
+            <option value="opc1">Opción 1</option>
+            <option value="opc2" selected>Opción 2</option>
+            <option value="opc3">Opción 3</option>
+            <option value="opc4">Opción 4</option>
+
+       </select>
+
+       <br><br>
+       <input type="submit" value="Guardar">
+        
+    </form>
+    <br><br><br>
+
+    <h1>EJEMPLOS DE iFrames </h1>
+    
+    <iframe 
+        src="https://www.youtube.com/embed/y2bVIBwpCTA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        width="560" 
+        height="315" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <br> <br><br><br>
+    <iframe src="files/impresion (2).pdf" frameborder="10" width="560" height="315"></iframe>
+    <br><br>
+
+    <h1>EJEMPLOS DE OBJETOS</h1>
+    <object data="files/impresion (2).pdf" type="application/pdf" width="800" height="600" ></object>
+    <br><br><br>
+
+    
+</body>
+</html>

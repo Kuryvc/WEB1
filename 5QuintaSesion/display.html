@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            border: 3px dashed red;
+        }
+        p{
+            border: 3px dotted blue;
+        }
+        #dos{
+            display: inline
+        }
+        #tres{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+        }
+        #h:hover ~ p { 
+            display: none;
+        }
+        /*Todos los p después del hover les aplica esos*/
+        div{
+            padding: 10px;
+            border: 3px dashed red;
+            margin: 15px;
+        }
+        #div1{
+            background-color: lightblue;
+        }
+        #div1:hover{
+            background-color: deepskyblue;
+            border: 3px dashed yellowgreen;
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        #div2{
+            z-index: 1; /*para ver en que capa lo pones, detrás o delante de otro elemento*/
+            position: absolute;
+            background-color: lightcoral;
+            left: 150px;
+            top: 520px;
+        }
+        #div3{
+            background-color: lightgreen ;
+            position: /*fixed*/ absolute;
+            left: 110px;
+            top: 500px;
+        }
+        img{
+            float:right;
+        }
+        #div4{
+            padding: 10px;
+            border: 3px dashed blue;
+            margin: 15px;
+            background-color: burlywood;
+            width: 20%;
+        }
+        
+    </style>
+<body>
+    <h1> Display </h1>
+    <h1 id="h"> Prueba de display</h1> <!--Display none para no mostrarlo-->
+    <p id="uno"> Párrafo block<br> dividido en 2 renglones</p> <!--Ocupa todo el ancho del elemento padre el in block y lo tiene por default, no puedes asignar ancho y alto-->
+    <p id="dos"> Párrafo inline </p> <!--Hace que elemento que está seleccionanado se ajuste al contenido-->
+    <p id="tres"> Párrafo inline-block</p><br>  <!--Es un inline que sí le puede definir el ancho y el alto-->
+
+    <!--Positions-->
+    <!--Static: la traen todos por defecto, respecto al flujo normal de la página, de acuerdo el flujo es como se acomodan-->
+    <!--Relative: la mueve respecto a su posición original-->
+    <!--Absolute: se desplaza respecto a su bloque contenedor, al elemento padre, en este caso div 2 respecto al body-->
+    <!--Fixed: se desplaza como absolute pero sin importarle el scroll-->
+
+    <h1> Posiciones: </h1>
+    <div id="div1"> TEST 1: </div>
+    <div id="div2"> TEST 2: </div>
+    <div id="div3"> TEST 3: </div>
+
+    <br><br><br><br><br><br>
+
+    <h1>Float</h1>
+    <div id="div4"> 
+        <img src="images/encabezado1.jpg" width="70px"> TEST1. Esto es una prueba. Sólo estoy escribiendo texto para ver qué onda. No puedo creer que esté perdiendo mi tiempo en escribir texto cuando podría copiar un Loren Ipsum...bueno, supongo que si ya estoy aquí, might as well escribo más cosas para poder ejemplificar. No hay mucho más que añadir, sólo pongo más para que, cuando haga la página un poco más chiquita horizontalmente se vea más claro el ejemplo que estoy tratando de mostrar.
+    </div>
+
+    
+</body>
+</html>
