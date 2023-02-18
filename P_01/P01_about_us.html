@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>About Us</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1d7d190642.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+            <div class="container">
+                <a class="navbar-brand" href="P01_index.html"> 
+                    <span class = "fa-stack fa-lg">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-kitchen-set fa-stack-1x"></i>
+                        
+                    </span>                
+                </a>
+            
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="P01_index.html" aria-current="page"> Inicio <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="P01_index.html">Alimentos</a>
+                                    <a class="dropdown-item" href="P01_catA.html">Bebidas</a>
+                                    <a class="dropdown-item" href="P01_catB.html">Postres</a>
+                                </div>
+                            </li>
+                            <li>
+                                <form class="d-flex my-2 my-lg-0">
+                                    <input class="form-control mx-sm-2" type="text" placeholder="Buscar productos">
+                                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                                </form>
+                            </li>                    
+                        </ul>                
+            </div>
+            <a href="#"><button style="border:none;border-radius: 10px; padding:5px 10px 5px 10px;" class="mx-2 " data-bs-toggle="modal" data-bs-target="#modalLogin"> <i class="fa-solid fa-user" ></i> Ingresar </button></a>
+            <a href="P01_cart.html"><button style="border:none;border-radius: 10px; padding:5px 10px 5px 10px;"> <i class="fa-solid fa-shopping-cart" ></i></button></a>
+            
+        </div>
+    </nav>   
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+            <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">INICIAR SESIÓN</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" id="formModal">
+                                <label for="correo">Correo </label><br>
+                                <div class="input-group mb-3">  
+                                    <input id= "correo" class="form-control" type="email" placeholder="Ingresa tu correo" required>
+                                    <span class="input-group-text"> <i class="fa-solid fa-user"></i></span>                     
+                                                            
+                                </div>
+                                <label for="contraseña">Contraseña </label><br>
+                                <div class="input-group mb-3">  
+                                    <input id= "contraseña" class= "form-control" type="password" placeholder="Ingresa tu contraseña" required>
+                                    <span class="input-group-text"> <i class="fa-solid fa-key"></i></span>             
+                                                            
+                                </div>      
+                                <div class="Login" style="text-align:center;">
+                                    <button type="submit" class="btn btn-primary">Login</button>                    
+                                </div><br>
+                                
+                                <div class="modal-footer d-flex justify-content-center ">
+                                    <label for="Sin cuenta"> ¿No tienes cuenta? </label> 
+                                    <a href="#"><label for="Registrate" style="cursor: pointer; color:blue" data-bs-toggle="modal" data-bs-target="#modalRegister"> Regístrate Aquí </label></a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>   
+                
+            <!-- Modal Body -->
+            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+            <div class="modal fade " id="modalRegister" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Registrarse</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row m-2 my-2">
+                                    <div class="col-6">
+                                        <input id= "nombre" class="form-control" type="text" placeholder="Nombre(s)" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <input id= "apellido" class="form-control" type="text" placeholder="Apellidos" required>
+                                    </div>                                                   
+                                </div>        
+                                <div class="row m-2 my-2">
+                                    <div class="col">
+                                        <input id= "correoRegister" class="form-control" type="email" placeholder="Tu Correo" required>
+                                    </div>                              
+                                </div>
+                                <div class="row m-2 my-2">
+                                    <div class="col">
+                                        <input id= "contraseñaRegister" class="form-control" type="password" placeholder="Contraseña" required>
+                                    </div>                                                        
+                                </div>
+                                <div class="row m-2 my-2">
+                                    <div class="col">
+                                        <input id= "contraseñaRegisterConfirm" class="form-control" type="password" placeholder="Confirmar Contraseña" required> 
+                                    </div>                                                        
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success"> Registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+    </header>
+  <main>
+    <div style="margin:50px">
+        <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat praesentium illum quaerat, cupiditate est earum molestias. Laborum laboriosam, deserunt eveniet odio vero odit, culpa alias pariatur, iusto dolor expedita placeat!</h1>
+    </div>
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -37,12 +37,12 @@
                                                     
                         </div>      
                         <div class="Login" style="text-align:center;">
-                            <button type="button" class="btn btn-primary">Login</button>                    
+                            <button type="submit" class="btn btn-primary">Login</button>                    
                         </div><br>
                         
                         <div class="modal-footer d-flex justify-content-center ">
                             <label for="Sin cuenta"> ¿No tienes cuenta? </label> 
-                            <a href=""><label for="Registrate" style="cursor: pointer; color:blue"> Regístrate Aquí </label></a>
+                            <a href="#"><label for="Registrate" style="cursor: pointer; color:blue" data-bs-toggle="modal" data-bs-target="#modalRegister"> Regístrate Aquí </label></a>
                         </div>
                     </form>
                 </div>
@@ -53,30 +53,48 @@
         
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+    <div class="modal fade " id="modalRegister" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <h5 class="modal-title" id="modalTitleId">Registrarse</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Body
+                    <div class="container">
+                        <div class="row m-2 my-2">
+                            <div class="col-6">
+                                <input id= "nombre" class="form-control" type="text" placeholder="Nombre(s)" required>
+                            </div>
+                            <div class="col-6">
+                                <input id= "apellido" class="form-control" type="text" placeholder="Apellidos" required>
+                            </div>                                                   
+                        </div>        
+                        <div class="row m-2 my-2">
+                            <div class="col">
+                                <input id= "correoRegister" class="form-control" type="email" placeholder="Tu Correo" required>
+                            </div>                              
+                        </div>
+                        <div class="row m-2 my-2">
+                            <div class="col">
+                                <input id= "contraseñaRegister" class="form-control" type="password" placeholder="Contraseña" required>
+                            </div>                                                        
+                        </div>
+                        <div class="row m-2 my-2">
+                            <div class="col">
+                                <input id= "contraseñaRegisterConfirm" class="form-control" type="password" placeholder="Confirmar Contraseña" required> 
+                            </div>                                                        
+                        </div>
+                    </div>
                 </div>
+                
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-success"> Registrarse</button>
                 </div>
             </div>
         </div>
     </div>
     
-    
-    <!-- Optional: Place to the bottom of scripts -->
-    <script>
-        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-    
-    </script>
     
 
 
@@ -105,13 +123,14 @@
                         <a class="nav-link active" href="#" aria-current="page"> Inicio <span class="visually-hidden">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                        <a class="nav-link" href="P01_about_us.html">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Productos</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
+                            <a class="dropdown-item" href="#">Alimentos</a>
+                            <a class="dropdown-item" href="P01_catA.html">Bebidas</a>
+                            <a class="dropdown-item" href="P01_catB.html">Postres</a>
                         </div>
                     </li>
                     <li>
@@ -123,7 +142,7 @@
                 </ul>                
             </div>
             <a href="#"><button style="border:none;border-radius: 10px; padding:5px 10px 5px 10px;" class="mx-2 " data-bs-toggle="modal" data-bs-target="#modalLogin"> <i class="fa-solid fa-user" ></i> Ingresar </button></a>
-            <a href="#"><button style="border:none;border-radius: 10px; padding:5px 10px 5px 10px;"> <i class="fa-solid fa-shopping-cart" ></i></button></a>
+            <a href="P01_cart.html"><button style="border:none;border-radius: 10px; padding:5px 10px 5px 10px;"> <i class="fa-solid fa-shopping-cart" ></i></button></a>
             
       </div>
     </nav>
@@ -162,79 +181,82 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <br><br><br>
+    <br><br>
+    <div class="lead" style="margin:15px; background-color:rgb(224, 222, 222);padding:10px;text-align:center">
+        <h1> PLATILLOS PRINCIPALES </h1>
+    </div>
 
-    <div class="container" style="display:flex; align-items:stretch; justify-content:space-evenly; flex-wrap:wrap ">
-        <div class="row" >
+    <div class = 'container' style="justify-content:space-evenly; flex-wrap:wrap; display:flex; align-content: flex-start; flex-direction:row ">
+        <div class="row">
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card1.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card1.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
                         <h4 class="card-title">Pollo</h4>
-                        <p class="card-text">Rico Pollo</p>
+                        <p class="card-text" style="text-align:justify"> Pollo marinado en especias, asado a la leña o a gas en un sistema rotatorio, con una cocción uniforme y jugosa. Acompañado de papas, ensaladas de verduras y salsas tradicionales.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card2.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card2.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
                         <h4 class="card-title">Pescado</h4>
-                        <p class="card-text">Rico Pescado</p>
+                        <p class="card-text" style="text-align:justify"> Lomos de merluza con salsa de azafrán y almendras, ponemos a calentar 5 cucharadas de aceite en una cazuela ancha, incorporamos los 3 dientes de ajo pelados y las almendras.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card3.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card3.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
                         <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <p class="card-text" style="text-align:justify"> El sushi de salmón es una de las recetas japonesas más populares. Es un platillo versátil que puede ser elaborado con salmón fresco o salmón ahumado. Incluso una rebanadas de aguacate extra le darán un toque cremoso.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card4.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card4.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
-                        <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <h4 class="card-title">Mar y Tierra</h4>
+                        <p class="card-text" style="text-align:justify"> Plato que combina algún marisco, generalmente camarones, langostinos o langosta, con algún corte de carne de res o pollo</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card5.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card5.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
-                        <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <h4 class="card-title"> Crostini</h4>
+                        <p class="card-text" style="text-align:justify"> Vaca o crostini en pizarra. Ideal como aperitivo.Baguette tostada con semillas de girasol y lino, mermelada de cebolla, queso crema y tomillo fresco</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card6.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card6.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
-                        <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <h4 class="card-title">Langostinos</h4>
+                        <p class="card-text" style="text-align:justify"> Sofreír la chalota en la mantequilla y, cuando esté pochada, añadir las cabezas de los langostinos y las espinas y las cabezas del lenguado. Incorporar el perejil y el vino blanco.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card7.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card7.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
-                        <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <h4 class="card-title"> Rape con Ragout</h4>
+                        <p class="card-text" style="text-align:justify"> Rape con ragout de verduras y manitas de cerdo, cortamos los espárragos en dados y reservamos unas puntas para decorar.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="images/Card8.jpg" alt="Title" style="width:300px ;height:200px;">
+                <div class="card" style="width:auto">
+                    <img class="card-img-top" src="images/Card8.jpg" alt="Title" style="width:300px ;height:200px;margin:auto">
                     <div class="card-body">
-                        <h4 class="card-title">Sushi</h4>
-                        <p class="card-text">Rico Sushi</p>
+                        <h4 class="card-title">Espaguetti</h4>
+                        <p class="card-text" style="text-align:justify"> Plato de pasta italiano. La receta original se basa en huevos, queso parmesano, pimienta negra y tocino</p>
                     </div>
                 </div>
             </div>
@@ -251,8 +273,8 @@
               </a>
             </li>
             <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="P01_catA.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="P01_catB.html">3</a></li>
             <li class="page-item">
               <a class="page-link" href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>

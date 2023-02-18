@@ -1,0 +1,10 @@
+Con esta práctica logré aplicar los conocimientos básicos de html y css con ayuda de boostrap 5, logrando 
+dejar claro el funcionamiento primario de una página web, los principales elementos, clases, atributos, 
+etiquetas y herramientas que se pueden utiizar para dar forma y guiar el desempeño. 
+
+Lo que más me llevó tiempo fue el uso de algunos elementos de bootstrap, ya que no conocía las características que
+algunas clases brindaban ya por default o que chocaban con otras que yo definía por separado. También fue un reto 
+lograr comprender a la perfección el tema del grid y el acomodo entre columnas y filas adecuado para los diferentes 
+elementos que se desplegaban en pantalla, logrando la responsividad de la página. 
+Por último, al ser principiante en el tema, me gustó estar indagando a la vez que aplicaba distintos elementos dentro 
+del proyecto, pero también fue de lo que más tiempo consumió.
