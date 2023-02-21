@@ -163,4 +163,4 @@ let Celular3 = {
     }
 }
 
-Celular3.Ram = '1, 2';
+Celular3.Ram = '1 2';
